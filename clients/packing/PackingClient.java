@@ -35,7 +35,7 @@ public class PackingClient
   {     
     JFrame  window = new JFrame();
      
-    window.setTitle( "Packing Client (RMI MVC)");
+    window.setTitle( "Packing Station");
     window.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     
     PackingModel      model = new PackingModel(mf);
@@ -47,4 +47,3 @@ public class PackingClient
     window.setVisible(true);         // Display Screen
   }
 }
-

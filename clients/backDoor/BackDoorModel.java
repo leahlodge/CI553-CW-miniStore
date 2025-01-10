@@ -147,7 +147,7 @@ public class BackDoorModel extends Observable
    */
   protected Basket makeBasket()
   {
-    return new Basket();
+    return new BetterBasket(); //Line changed due to merge 
   }
 }
 

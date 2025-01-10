@@ -7,7 +7,7 @@ import middle.MiddleFactory;
 import middle.OrderProcessing;
 import middle.StockException;
 import middle.StockReader;
-
+import catalogue.BetterBasket; // imported  BetterBasket
 import javax.swing.*;
 import java.util.Observable;
 
@@ -128,7 +128,7 @@ public class CustomerModel extends Observable
    */
   protected Basket makeBasket()
   {
-    return new Basket();
+    return new BetterBasket();
   }
 }
 

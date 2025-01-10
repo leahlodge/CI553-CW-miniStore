@@ -46,3 +46,4 @@ public class CashierController
     model.doBought();
   }
 }
+

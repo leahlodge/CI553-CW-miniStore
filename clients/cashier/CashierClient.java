@@ -6,7 +6,11 @@ import middle.Names;
 import middle.RemoteMiddleFactory;
 
 import javax.swing.*;
+import middle.MiddleFactory;
+import middle.Names;
+import middle.RemoteMiddleFactory;
 
+import javax.swing.*;
 /**
  * The standalone Cashier Client.
  */
@@ -34,7 +38,7 @@ public class CashierClient
   {     
     JFrame  window = new JFrame();
      
-    window.setTitle( "Cashier Client (MVC RMI)");
+    window.setTitle( "Cashier ");
     window.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     
     CashierModel      model = new CashierModel(mf);

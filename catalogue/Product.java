@@ -1,7 +1,7 @@
 package catalogue;
 
 import java.io.Serializable;
-
+import java.util.Objects;
 /**
  * Used to hold the following information about
  * a product: Product number, Description, Price, Stock level.
@@ -33,29 +33,45 @@ public class Product implements Serializable
     theQuantity    = aQuantity;       // Quantity involved
   }
   
-  public String getProductNum()  { return theProductNum; }
-  public String getDescription() { return theDescription; }
-  public double getPrice()       { return thePrice; }
-  public int    getQuantity()    { return theQuantity; }
-  
-  public void setProductNum( String aProductNum )
-  { 
-    theProductNum = aProductNum;
+//Getters and Setters
+  public String getProductNum() {
+      return theProductNum;
   }
-  
-  public void setDescription( String aDescription )
-  { 
-    theDescription = aDescription;
+
+  public String getDescription() {
+      return theDescription;
   }
-  
-  public void setPrice( double aPrice )
-  { 
-    thePrice = aPrice;
+
+  public double getPrice() {
+      return thePrice;
   }
-  
-  public void setQuantity( int aQuantity )
-  { 
-    theQuantity = aQuantity;
+
+  public int getQuantity() {
+      return theQuantity;
+  }
+
+  public void setProductNum(String aProductNum) {
+      theProductNum = aProductNum;
+  }
+
+  public void setDescription(String aDescription) {
+      theDescription = aDescription;
+  }
+
+  public void setPrice(double aPrice) {
+      thePrice = aPrice;
+  }
+
+  public void setQuantity(int aQuantity) {
+      theQuantity = aQuantity;
+  }
+
+ 
+
+  // Overriding hashCode() to generate a consistent hash code based on productNum
+  @Override
+  public int hashCode() {
+      return Objects.hash(theProductNum);  // Use productNum for hash code
   }
 
 }

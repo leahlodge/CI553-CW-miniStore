@@ -32,7 +32,7 @@ public class BackDoorClient
   {     
     JFrame  window = new JFrame();
      
-    window.setTitle( "BackDoor Client (MVC RMI)");
+    window.setTitle( "Stockroom");
     window.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     
     BackDoorModel      model = new BackDoorModel(mf);
